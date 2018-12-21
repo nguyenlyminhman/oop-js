@@ -1,17 +1,4 @@
-class Person {
-    constructor(name, age) {
-        this.name = name
-        this._age = age  //_age is private propertie. I donot want to share.
-    }
-}
-
-const p = new Person('Neko', 30)
-// But '_age' is not a private propertie because we can do this:
-console.info(p._age)
-//--------------------------------------------------------------------------------------
-
 const secret = new WeakMap();
-
 class SecretPerson {
     constructor(name, age) {
         this.name = name
